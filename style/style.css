@@ -1,0 +1,337 @@
+*{
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+     margin: 0;
+     padding: 0;
+}
+header{
+     display: flex;
+     justify-content: center;
+     height: 120px;
+}
+.container{
+     width: 990px;
+     /* height: 100px; */
+     /* background-color: red; */
+     display: flex;
+     justify-content: space-between;
+}
+img{
+     /* height: 100px; */
+     width: 100px;
+}
+.logo{
+     /* background-color: green; */
+     display: flex;
+     align-items: center;
+
+}
+.menu{ /* classe PAI do   */
+     display: flex;
+     align-items: center;
+}
+.nav ul, nav li{
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+nav ul{
+     display: flex;
+}
+
+nav a{
+     display: block;
+     padding: 15px;
+     text-decoration: none;
+     text-transform: uppercase;
+     color:#727272;
+     font-family: Arial, Helvetica, sans-serif;
+}
+nav ul{
+     display:flex;
+}
+nav .active a, nav a:hover{
+     background-color: #82027d;
+     color: white;  
+}
+#banner{
+     display:flex;
+     justify-content: center;/*O ESPAÇO FICA CENTRALIZADO*/
+     background-image: url('assests/css/img/banner_qualidade_De_vida.webp');
+     background-position: center;
+     background-size: cover;
+     height:670px;/* TEM QUE COLOCAR ESSA ALTURA PARA APARECER ESSA IMG*/
+}
+.column{
+     flex-direction: column;/*AQUI EU TENHO UMA ALTURA FIXA*/
+}
+.banner_headline{
+     flex: 1;
+     display: flex;/* faz o texto ficar ao lado do outro sem pular linha.Apenas display flex mesmo.*/
+     flex-direction: column;/* faz com o que o "H2" fique na linha de baixo*/
+     justify-content: center;
+     
+}
+.banner_headline h1{
+    font-size: 70px;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;/*notação importante faz a quebra de linha do h1, ou seja , o expirience fica abaixo do top notch.*/
+}
+.banner_headline h2{
+    font-size: 22px;
+    color: #fff;
+    text-shadow: 6px 6px 8px rgba(0,0,0,0.5);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    margin-top: 30px;
+    max-width: 350px;
+}
+.banner_options{
+    
+     display: flex;
+     height: 240px;
+}
+.banner1,.banner2,.banner3{
+     flex: 1;
+     color: #ffff;
+     padding: 30px ;
+     flex-direction: column;
+}
+.banner1{
+     /* background: #82027d; */
+      background-color: #BF247A;
+}
+.banner2{
+     background-color: #812B8C;
+}
+.banner3{
+     background-color: #82027d;
+     border-bottom: #fff;
+}
+.banner_title{
+     font-size: 20px;
+     margin-top: -15px;
+}
+.banner_desc{
+     font-size: 16px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+}
+ 
+.banner_options a{
+     display: inline-block;/* ele vai respeitar o conteudo, ou seja, se eu colocar uma descrição a barra branca vai ficar do tamanho da descrição.*/
+     border: 1px solid white;
+     font-size: 12px;
+     padding: 10px;
+     color: white;
+     text-decoration: none;
+     /* align-content: end; */
+}
+
+.banner_options a:hover {
+     background-color: white;
+     color: #82027d; /* cor de fundo do banner3, para manter identidade visual */
+     transform: scale(1.1);
+     box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+.monday{
+     display: flex;
+     justify-content: space-between;
+     text-decoration: underline;
+     border-bottom: white;
+}
+.monday_title{
+     font-size: 15px;
+}
+.monday_p{
+     /* padding: 5px; */
+     /* background: black; */
+}
+#geral{
+     display: flex;/*COMO O DISPLAY É FLEX ELE CONSEGUE DEIXAR O ASIDE  E A SECTION UMA AO LADO DA OUTRA*/
+     justify-content: center;
+}
+
+/* OBSERVAÇÃO: AO COLOCAR EM TODAS AS TAGS "DISPLAY:FLEX; E JUSTIFY CONTENT: CENTER, TODO O CONTEUDO FICARÁ CENTRAL NO body*/
+#geral{
+     display:flex;
+     justify-content: center;
+}
+#geral section{
+     flex: 2;
+}
+#geral aside{
+     flex: 1;
+}
+.widget_title{
+     margin-top: 30px;
+     margin-bottom: 20px
+}
+.widget_title_text{
+     color: black;
+     font-size: 21px;
+     font-weight: bold;
+}
+.noticies ul {
+    list-style: none;
+    padding-left: 0; /* remove o recuo padrão */
+}
+li{
+     display: flex;
+     padding-top: 20px;
+}
+.depoimento_texto {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.news{
+     color: black;
+
+}
+
+.depoimento_nome {
+    font-weight: bold;
+    text-align: right;
+}
+.widget_title_bar{
+     width: 50px;
+     height: 3px;
+     background-color:#BF247A ;
+     margin-top: 10px;
+}
+.new_comments {
+  font-size: 12px;
+  padding: 10px 0;
+}
+.widget_body article {
+  display: flex;
+  flex-direction: column;
+}
+.widget {
+  display: flex;
+  flex-direction: column; /* muda de row para column */
+}
+
+.news_data{
+     display: flex;
+     /* gap: 20px; */
+
+}
+.new_posted_at {
+  font-size: 12px;
+  padding: 15px;
+  background-color:#82027d ;
+  color: #fff;
+  margin-right: 2px;
+
+}
+.new_comments{
+     padding: 15px;
+     background-color: #BF247A;
+     color: white;
+}
+.new_thumb img{
+    width: 100%;
+    /* max-width: 500px; ou outro valor apropriado */
+    height: auto;
+}
+.new_thumb{
+     margin-top: 30px;
+}
+.new_titulo{
+     margin-top: 25px;
+     margin-bottom: 25px;
+     color: black;
+     font-size: 23px;
+
+}
+.new_resume{
+     /* color: #0000; */
+     font-size: 14px;
+     line-height: 20px;
+     color: #5c5c5c;
+}
+a{
+     text-decoration: none;
+}
+.flex{
+
+     display: flex;
+     flex-wrap: wrap;
+
+}
+article{
+     flex: 1;/*Ele vai fazer a imagem ao vez de ficar em uma única coluna, ela irá ficar em 4.*/
+     min-width: 300px;/*Junto com o min-width*/
+     margin-right: 20px;
+     margin-top: 20px;
+}
+footer{
+     display: flex;
+     justify-content: center;
+     columns: 2;
+     background-color: black;
+     margin-top: 20px;
+}
+.footer_menu{
+     height: 100px;
+     display: flex;
+     /* margin-left: 0px; */
+
+}
+.fm_1, .fm_2, .fm_3{
+     flex: 1;
+     color: #ffff;
+     padding: 20px ;
+}
+.fm_1{
+     padding: 20px;
+     color: white;
+      background-color:#BF247A ;
+
+}
+.banner_footer_title{
+     font-size: 20px;
+     padding: 0px;
+     margin-bottom: 20px;
+}
+.fm_2{
+     background: #812B8C;
+      padding: 20px;
+      color: white;
+}
+.fm_3{
+     background-color: #82027d;
+      padding: 20px;
+      color: white;
+}
+
+
+.footer_area{
+     display: flex;
+     color: white;
+}
+.footer-areaitem{
+     flex: 1;
+     color: #ffff;
+     height: 440px;
+}
+.flexColum{
+     flex-direction: column;/*Eu colocando essa COLUM, a pula uma linha e coloca os conteudos do footer abaixo desses 3 lilais*/
+}
+footer .widget_title_text{
+     color: white;
+}
+.descricao_widget{
+     padding-top: 20px;
+     text-align: justify;
+     width: 200px;
+}
